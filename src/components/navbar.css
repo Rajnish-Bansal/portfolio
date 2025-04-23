@@ -213,7 +213,7 @@
 
   .toggle-switch {
     /* outline: auto; */
-    width: 25%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -263,7 +263,7 @@
   }
 
   input:checked + .slider:before {
-    transform: translateX(13px);
+    transform: translateX(14px);
   }
 
   .hamburger-menu {
