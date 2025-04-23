@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  /* color: white; */
+}
+
+.app {
+  min-height: 99vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: auto;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* background-color: #333; Add a background color for better visibility */
+}
+
+.home-container,
+.skills-container,
+.projects-container,
+.contact-container {
+  /* outline: auto; */
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh; /* Offset for the navbar */
+  scroll-margin-top: 9vh; /* Ensure proper scroll alignment */
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.experience-container {
+  /* outline: auto; */
+  width: 100%;
+  height: auto;
+  margin-top: 9vh; /* Offset for the navbar */
+  scroll-margin-top: 9vh; /* Ensure proper scroll alignment */
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+/* Responsive styles for tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 8vh; /* Reduce navbar height */
+  }
+
+  .home-container,
+  .skills-container,
+  .experience-container,
+  .projects-container,
+  .contact-container {
+    height: auto; /* Allow sections to adjust height dynamically */
+    padding: 15px; /* Reduce padding */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust font size for headings */
+  }
+}
+
+/* Responsive styles for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .navbar-container {
+    height: 7vh; /* Further reduce navbar height */
+  }
+
+  .home-container,
+  .skills-container,
+  .experience-container,
+  .projects-container {
+    /* outline: auto; */
+    margin-top: 9vh;
+    scroll-margin-top: 9vh;
+  }
+
+  .contact-container {
+    /* outline: auto; */
+    /* margin-top: 9vh; */
+    scroll-margin-top: 9vh;
+    margin-bottom: 9vh;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .app {
+    flex-direction: column; /* Ensure proper stacking on small screens */
+  }
+}

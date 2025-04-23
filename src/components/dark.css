@@ -1,0 +1,89 @@
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode.contact-links ul {
+  color: white;
+}
+
+body.dark-mode .contact-icon {
+  color: #d3e97a;
+  /* outline: auto; */
+}
+
+body.dark-mode li a {
+  color: white;
+}
+
+body.dark-mode .image-div {
+  border: 1px solid #d3e97a;
+}
+
+body.dark-mode .contact-links a {
+  color: white;
+}
+
+body.dark-mode .experience-component > h1 {
+  color: white;
+}
+
+body.dark-mode .form-group > label {
+  /* outline: auto; */
+  color: black;
+}
+
+body.dark-mode .project-links {
+  /* outline: auto; */
+  color: black;
+}
+
+body.dark-mode input:checked + .slider {
+  background-color: #d3e97a;
+}
+
+body.dark-mode .dark-p {
+  color: #d3e97a;
+}
+
+body.dark-mode .navbar-item:hover {
+  /* color: #39ff14; */
+}
+body.dark-mode .download-button {
+  background-color: #d3e97a;
+  color: black;
+}
+
+body.dark-mode .send-button {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .slick-next,
+body.dark-mode .slick-prev {
+  /* background-color: #d3e97a; */
+  color: #0c0c0c; /* Set the arrow icon color */
+  background-color: black;
+  border: 1px solid #d3e97a;
+}
+
+body.dark-mode .slick-next:hover,
+body.dark-mode .slick-prev:hover {
+  color: #0c0c0c; /* Set the arrow icon color */
+  background-color: rgb(66, 64, 64);
+}
+
+@media (max-width: 768px) {
+  body.dark-mode .slick-next:hover,
+  body.dark-mode .slick-prev:hover {
+    color: #0c0c0c; /* Set the arrow icon color */
+    background-color: rgb(66, 64, 64);
+  }
+}

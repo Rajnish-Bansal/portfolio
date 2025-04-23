@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+.home-component {
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-div {
+  height: 40%;
+  width: 50%;
+  font-size: 100px;
+  margin-left: 0;
+}
+
+.intro-paragraph {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 10;
+  font-family: "Inter", sans-serif;
+}
+
+.image-div {
+  /* outline: auto;   */
+  height: 88%;
+  width: 37%;
+  border-radius: 20px;
+  margin-right: 5%;
+  display: flex;
+}
+
+.image-div img {
+  /* outline: auto; */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsive styles for tablets (768px and below) */
+@media (max-width: 768px) {
+  .home-component {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Use full width */
+    margin-left: 0;
+  }
+
+  .intro-div {
+    width: 80%; /* Reduce width for smaller screens */
+    font-size: 60px; /* Reduce font size */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add spacing below */
+  }
+
+  .intro-paragraph {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .image-div {
+    width: 70%; /* Reduce image width */
+    height: auto; /* Adjust height dynamically */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+/* Responsive styles for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .home-component {
+    /* outline: auto; */
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .intro-div {
+    /* outline: auto; */
+    width: 100%; /* Use almost full width */
+    font-size: 40px; /* Further reduce font size */
+  }
+
+  .intro-paragraph {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .image-div {
+    /* outline: auto; */
+    width: 95%; /* Use full width for the image */
+    height: auto; /* Adjust height dynamically */
+  }
+
+  .image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap");
+
+.contact-component {
+  /* outline: auto; */
+  text-align: center;
+  /* padding: 20px; */
+  height: 90%;
+  width: 90%;
+  /* margin-left: 5%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* font-family: "Inter", sans-serif; */
+  font-weight: 100;
+  padding-bottom: 1%;
+}
+
+.contact-component > h1 {
+  /* outline: auto; */
+  font-size: 60px;
+  margin-bottom: 3%;
+}
+
+.contact-div {
+  /* outline: auto; */
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 80%;
+  height: 70%;
+  margin-top: 3%;
+  font-family: "Manrope", sans-serif;
+  /* background-color: aqua; */
+}
+
+.contact-form {
+  /* outline: auto;   */
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group > label {
+  /* outline: auto; */
+  display: block;
+  width: 90%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.send-button {
+  /* outline: auto; */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download-button {
+  /* outline: auto; */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-links {
+  /* outline: auto; */
+  width: 45%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: left; */
+}
+
+.contact-links h2 {
+  margin-bottom: 15px;
+}
+
+.contact-links ul {
+  /* outline: auto; */
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+.contact-links li {
+  /* outline: auto; */
+  /* margin-bottom: 10px; */
+  min-width: 20%;
+  height: 90%;
+  display: flex;
+  padding-left: 1%;
+  text-align: left;
+  align-items: center;
+}
+
+li a {
+  /* outline: auto; */
+  margin-left: 10%;
+}
+
+.contact-icon {
+  font-size: 150%; /* Increase the size of the icons */
+  /* color: black;  */
+}
+
+.contact-links a {
+  /* outline: auto; */
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.download-button {
+  /* outline: auto; */
+  color: white;
+}
+
+.download-button {
+  /* outline: auto; */
+  color: white;
+  width: 100%;
+}
+
+.mobile-contact-div {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .contact-div {
+    /* outline: auto; */
+    display: none;
+  }
+
+  .mobile-contact-div {
+    /* outline: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    height: 70%;
+    margin-top: 50px;
+    font-family: "Manrope", sans-serif;
+    /* background-color: aqua; */
+  }
+
+  .contact-component > h1 {
+    /* outline: auto; */
+    font-size: 40px;
+    margin-bottom: 3%;
+  }
+
+  .contact-links {
+    /* outline: auto; */
+    width: 99%;
+    height: auto;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* text-align: left; */
+  }
+
+  .contact-links ul {
+    /* outline: auto; */
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2%; */
+  }
+
+  .contact-links li {
+    /* outline: auto; */
+    min-width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-links a {
+    /* outline: auto; */
+    color: black;
+    margin-right: 10%;
+  }
+
+  .download-button {
+    /* outline: auto; */
+    margin-left: 10%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .contact-form {
+    /* outline: auto; */
+    width: 85%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    /* outline: auto; */
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap");
+
+.experience-component {
+  /* outline: auto; */
+  text-align: center;
+  /* color: #333; */
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-component > h1 {
+  font-size: 60px;
+  margin-bottom: 3%;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 80%;
+  width: 100%;
+}
+
+.experience-item {
+  /* outline: auto; */
+  background-color: #f9f9f9;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 2% 4%;
+}
+
+.experience-logo {
+  height: 90%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-logo img {
+  /* outline: auto; */
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.experience-details {
+  margin-left: 5%;
+  width: 80%;
+  height: auto; /* Allow height to adjust dynamically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-details h1 {
+  margin: 0;
+  color: #333;
+}
+
+.experience-details p {
+  margin: 5px 0;
+  color: #555;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.company-div {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+.period-div {
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: smaller;
+  color: black;
+}
+
+/* Responsive styles for tablets (768px and below) */
+@media (max-width: 768px) {
+  .experience-component > h1 {
+    font-size: 40px; /* Reduce font size for headings */
+  }
+
+  .experience-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .experience-logo {
+    width: 20%; /* Increase logo width */
+    height: auto; /* Adjust height dynamically */
+    margin-bottom: 10px; /* Add spacing below the logo */
+  }
+
+  .experience-details {
+    width: 100%; /* Use full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .experience-details h1 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .experience-details p {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* Responsive styles for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .experience-component {
+    /* outline: auto; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-component > h1 {
+    /* outline: auto; */
+    font-size: 40px; /* Further reduce font size for headings */
+    margin-bottom: 50px;
+  }
+
+  .experience-item {
+    /* outline: auto; */
+    height: auto; /* Set a fixed height */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Stack content vertically */
+    padding: 10px 5% 10px 5%; /* Reduce padding */
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+
+  .experience-logo {
+    /* outline: auto; */
+    width: 30%; /* Further increase logo width */
+    height: auto; /* Adjust height dynamically */
+    /* margin-bottom: 10px; Add spacing below the logo */
+  }
+
+  .experience-details {
+    /* outline: auto; */
+    min-height: 80%;
+    width: 100%; /* Use full width */
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+
+  .experience-details h1 {
+    font-size: 24px; /* Further reduce font size */
+    font-weight: 200;
+  }
+
+  .experience-details p {
+    font-size: 16px; /* Further reduce font size */
+    display: none;
+  }
+}
