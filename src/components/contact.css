@@ -256,4 +256,7 @@ li a {
     margin-bottom: 15px;
     text-align: left;
   }
+
+  .send-button{
+    width:90%;
 }
