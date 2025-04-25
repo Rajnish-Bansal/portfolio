@@ -14,7 +14,7 @@ function Experience() {
           <div className="experience-details">
             <h1>Fullstack Developer</h1>
             <div className="company-div">GestureMinds Webservices</div>
-            <div className="period-div">Apr 2024 - currently working</div>
+            <div className="period-div">Apr 2024 - Present</div>
             <br />
             <p>
               - Built scalable web applications using React.js and Node.js. and
