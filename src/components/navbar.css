@@ -101,7 +101,7 @@
   }
 
   .hamburger-menu {
-    outline: auto;
+/*     outline: auto; */
     /* display: none; */
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@
   }
 
   .bar {
-    outline: auto;
+/*     outline: auto; */
     display: block;
     height: 0.3%;
     width: 90%;
@@ -267,7 +267,7 @@
   }
 
   .hamburger-menu {
-    outline: auto;
+/*     outline: auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -284,7 +284,7 @@
   }
 
   .bar {
-    outline: auto;
+/*     outline: auto; */
     width: 15px;
     height: 2px;
     outline: auto;
