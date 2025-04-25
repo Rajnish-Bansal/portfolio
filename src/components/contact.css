@@ -236,7 +236,7 @@ li a {
 
   .download-button {
     /* outline: auto; */
-/*     margin-left: 10%; */
+    margin-left: 5%;
     background-color: #007bff;
     color: white;
     cursor: pointer;
